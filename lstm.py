@@ -188,8 +188,6 @@ def classfiy():
 from pyngrok import ngrok
 
 !ngrok authtoken 2sheSevVOgcQrpU7EmxnVevN0Oi_87V5yaUY4zaFAqCTLiaLJ
-
-app.run()
-
 public_url = ngrok.connect(5000)
 print(f"Your API is live at: {public_url}")
+app.run()
